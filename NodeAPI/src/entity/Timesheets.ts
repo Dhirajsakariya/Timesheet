@@ -112,14 +112,17 @@ export class Timesheets {
   })
   DTHr: Double;
 
-  // @Column()
-  // EmployeeRateGuid: string;
+  @Column()
+  EmployeeRateGuid: string;
 
   @Column({ type: "decimal", name: "EmployeeRate", precision: 18, scale: 2 })
   EmployeeRate: Double;
 
   @Column()
   State: string;
+
+  @Column()
+  IsOpeningBalance: string;
 
   EmployeeName: string;
   ProjectGuid: string;

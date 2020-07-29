@@ -27,7 +27,7 @@ class UserController {
   };
 
   static GetTimesheets = async (req: Request, res: Response) => {
-    const query = `EXEC [dbo].[GetTimesheetOfEmployeeTEST] 
+    const query = `EXEC [dbo].[GetTimesheetOfEmployee] 
     @EmployeeGuid = '${req.query.EmployeeGuid}',
     @StartDate ='${req.query.StartDate}', 
     @EndDate = '${req.query.EndDate}'`;
